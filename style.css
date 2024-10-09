@@ -306,7 +306,7 @@ button:hover {
 @media (max-width: 400px) {
 
     body {
-        width: 100vw; 
+        width: 100vw; /* view width and view heigh- Jesper pratade om det */
         margin: 0; 
         padding: 0;
     }
@@ -388,9 +388,9 @@ button:hover {
     }
 
     .section-gallery img {
-        width: 100%; /* Gör bilderna 100% breda inom sina grid-kolumner */
-        height: auto; /* Bevarar bildens proportioner och fyller kolumnerna */
-        aspect-ratio: 4/2; /* Gör bilderna bredare än de är höga */
+        width: 100%;
+        height: auto; 
+        aspect-ratio: 4/2; /* bredare bilder  */
     }
 
     .fa-trash-can {
