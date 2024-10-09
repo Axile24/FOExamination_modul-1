@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -370,3 +374,89 @@ grid-area: xt;
 .icono{
   position: absolute;
 }
+
+.footer{
+  grid-area: footer;
+  height: 500px;
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:"w photo"
+                      "x-1 photo";
+                     background-image: url("https://images.unsplash.com/photo-1586281010691-f9da4be5b1f7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
+ width: auto;
+ height: auto;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ height: 500px;
+}
+
+.left-column-bottom{
+  grid-area: w;
+  display: flex;
+  align-items: center;
+justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, rgba(12, 11, 11, 0), rgb(20, 11, 11));
+
+  
+}
+
+.titre-1{
+  grid-area: tp;
+  height: 50px;
+  text-align: center;
+  font-family:'Open Sans';
+  font-size: 20px;
+}
+
+.nav-bottom{
+  grid-area:x-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-end;
+  background-image: linear-gradient(to right, rgba(0, 2, 0, 0), rgb(11, 0, 0));
+  
+  
+  
+}
+.phone{
+padding-right: 10px;
+color: #fff;
+
+}
+.fa-phone-alt{
+  margin-left: 20px;
+}
+
+.phone-number{
+display: inline-block;
+font-size: 15px;
+font-family:'Open Sans';
+margin-left: 13px;
+color: #fff;
+
+
+}
+.email{
+ text-align: right;
+ padding-right: 10px;
+ color: #fff;
+}
+.fa-envelope{
+  padding-left: 10px;
+}
+
+
+.right-column-bottom{
+  grid-area: photo;
+  width: auto;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
