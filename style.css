@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* bred meme avec le padding */
+}
+
+body {
+    width: 60vw; 
+    background-color: #fcf6fc;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    color: #0a846e;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0a846e;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Bien avec 100% */
+    height: 70px;
+    background-color: white;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+}
+  
+li a {
+    text-decoration: none;
+    color: #0a846e;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+li a:hover {
+    background-color: lightgray; 
+    color: darkgreen;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 500px;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background-image: url('./assets/images/handsidan.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+.header-img > h1 {
+    margin-top: 50px;
+    color: white;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+    background-color: white;
+    padding: 52px;
+    color: black;
+ 
+h1 {
+    text-align: left; 
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between; /*Besoins d'un éspace*/
+    margin-bottom: 15px;
+}
+
+label {
+    flex: 1; 
+    margin-right: 20px; 
+    text-align: left; 
+}
+
+input {
+    flex: 1; 
+    padding: 5px;
+    margin-right: 20px; 
+
+}
+
+button {
+    align-self: center; 
+    padding: 10px 20px;
+    width: 20%;
+    background-color: #0a846e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+button:hover {
+    background-color: #006400;
+}
+
+}
+
+.date-input-two {
+    display: none !important;
+}
+
+/* Första sektionen */
+.plant-one.one {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.plant-one.one > h1 {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+/* Andra sektionen */
+.plant-one.two {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.plant-one.two > h1 {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.plant-one.two .card-container {
+    display: flex;
+    gap: 10px; 
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: 20px 0 60px 20px;
+    /* margin-bottom: 20px; */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.image-container img:first-child {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: auto;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.thin-name {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.btn-remove {
+    width: 95px;
+    height: 35px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #B93857;
+}
+
+.fa-trash-can {
+    display: none !important;
+
+}
+
+
+/* La gallery */
+.section-gallery {
+    width: 100%; /* Täck hela bredden */
+    display: flex;
+    justify-content: space-around; /* Jämnt mellanrum mellan bilderna */
+    background-color: #9E6D52; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.section-gallery figure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    gap: 10px; 
+    flex-wrap: wrap; /* bien responsive avec wrap et devien moins avec les telefone */
+}
+
+.section-gallery img {
+    height: 250px; 
+    width: calc(25% - 10px); /* ca ne marche pas avec media queries
+     Gör bilderna lika stora och lämnar plats för mellanrum */
+    max-width: 100%; /* Hindrar bilderna från att bli för breda */
+    object-fit: cover; /* Bevara proportionerna och fyll containern */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.section-gallery img:last-child {
+    margin-right: 0; /* Tar bort margin från sista bilden */
+}
+
+/* footer */
+
+.nav-bottom {
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+.nav-bottom > a {
+    color: black;
+    text-decoration: none;
+}
+
+/* minska elementen i mobilläge */
+@media (max-width: 400px) {
+
+    body {
+        width: 100vw; 
+        margin: 0; 
+        padding: 0;
+    }
+
+    /* nav */
+    nav {
+        display: none;
+    }
+
+    /* Header */
+    .hamburger-icon {
+        display: inline-block !important;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute; 
+        top: 20px; 
+        right: 20px; 
+        z-index: 10; 
+        color: rgb(255, 255, 255);
+    }
+
+ 
+    form {
+        padding: 20px; 
+        width: 100%; 
+    }
+
+    h1 {
+        text-align: center; 
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column; 
+        align-items: stretch; 
+        margin-bottom: 20px;
+    }
+
+    label, input {
+        width: 100%; 
+        margin-right: 0; 
+        text-align: left; 
+    }
+
+    input {
+        padding: 10px; 
+        margin-bottom: 15px; 
+    }
+
+    button {
+        width: 100%;
+        font-size: 0.7rem;
+    }
+
+    .date-input-one {
+        display: none !important;
+    }
+
+    .date-input-two {
+        padding-bottom: 10px;
+        display:inline-block !important;
+    }
+
+    /* grid */
+    .card {
+        margin: 0 0 60px 20px;
+
+    }
+
+    /* section gallery */
+    .section-gallery {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+    }
+
+    .section-gallery figure {
+        display: contents; /* För att undvika att figure påverkar grid-layouten */
+    }
+
+    .section-gallery img {
+        width: 100%; /* Gör bilderna 100% breda inom sina grid-kolumner */
+        height: auto; /* Bevarar bildens proportioner och fyller kolumnerna */
+        aspect-ratio: 4/2; /* Gör bilderna bredare än de är höga */
+    }
+
+    .fa-trash-can {
+        color: red;
+        /* width: 95px;
+        height: 35px; */
+        font-size: 0.8rem;
+        font-weight: 500;
+        display:inline-block !important;
+    }
+
+    .btn-remove {
+        display: none;
+    }
+
+    .nav-bottom {
+        display: flex !important;
+    }
+
+    .nav-bottom > a {
+        font-size: 0.8rem;
+    }
+
+}

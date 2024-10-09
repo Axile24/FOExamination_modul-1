@@ -3,11 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    
     <title>Page 2</title>
+
 </head>
 <body>
 
-    <h1> Test fine ----------------------sida 2 </h1>
+    <header>
+        <div class="header-img">
+            <img src="assets/icons/Logo.svg" alt="" />
+            <h1>Mina sidor</h1>
+        </div>
+
+        <a href="index.html" class="hamburger-icon">
+            <i class="fas fa-bars"></i>
+        </a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">PLANTS</a></li>
+            <li><a href="#">HISTORIK</a></li>
+            <li><a href="#">TIPS</a></li>
+            <li><a href="index.html">LOGGA IN</a></li>
+        </ul>
+    </nav>
+
+    <form action="">
+        <h1>Lägg till ny plantering:</h1>
+    
+        <div class="form-row">
+            <label for="name">Planta:</label>
+            <label for="date" class="date-input-one">Datum:</label>
+        </div>
+    
+        <div class="form-row">
+            <input type="text" id="name" placeholder="Ange planta" />
+            <label for="date" class="date-input-two">Datum:</label>
+            <input type="date" id="date" />
+        </div>
+    
+        <button type="submit">Lägg till</button>
+    </form>
+    
+    <section class="plant-one one">
+        <h1>Dina planerade planteringar</h1>
+        <div class="card">
+            <div class="image-container">
+                <img src="assets/images/gurka.avif" alt="Produktbild">
+                <img src="assets/icons/dig.svg" alt="Logga" class="logo">
+            </div>
+            <div class="product-info">
+                <p class="product-name">Gurka</p>
+                <p class="date">15 april 2024</p>
+            </div>
+            <div class="additional-info">
+                <p class="thin-name">Ricco Coolio</p>
+                <button class="btn-remove">TA BORT</button>
+                <i class="fa-regular fa-trash-can"></i>
+            </div>
+        </div>
+    </section>
+    
+    <section class="plant-one two">
+        <h1>Dina planerade planteringar</h1>
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="assets/images/gurka.avif" alt="Produktbild">
+                    <img src="assets/icons/dig.svg" alt="Logga" class="logo">
+                </div>
+                <div class="product-info">
+                    <p class="product-name">Gurka</p>
+                    <p class="date">15 april 2024</p>
+                </div>
+                <div class="additional-info">
+                    <p class="thin-name">Ricco Coolio</p>
+                    <button class="btn-remove">TA BORT</button>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="image-container">
+                    <img src="assets/images/gurka.avif" alt="Produktbild">
+                    <img src="assets/icons/dig.svg" alt="Logga" class="logo">
+                </div>
+                <div class="product-info">
+                    <p class="product-name">Gurka</p>
+                    <p class="date">15 april 2024</p>
+                </div>
+                <div class="additional-info">
+                    <p class="thin-name">Ricco Coolio</p>
+                    <button class="btn-remove">TA BORT</button>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-gallery">
+        <figure>
+            <img src="assets/images/plockar.avif" alt="">
+            <img src="assets/images/vattenkanna.avif" alt="">
+            <img src="assets/images/massagrönsaker.avif" alt="">
+            <img src="assets/images/tjejmedhatt.avif" alt="">
+        </figure>
+    </section>
+        
+    <footer>
+        <nav class="nav-bottom">
+            <a href="#">Till toppen av sidan</a>
+          </nav>
+    </footer>
     
 </body>
 </html>
