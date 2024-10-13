@@ -28,7 +28,7 @@ header {
   background-color: rgb(155, 154, 137);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
+  gap: 0;
   grid-template-areas:
     "a a b"
     "a a c";
@@ -40,6 +40,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
  
 }
 
@@ -55,7 +57,7 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  width: 200px;
+  width: 150px;
  
  
 }
@@ -63,6 +65,7 @@ header {
 .header-items__item2 {
   grid-area: b;
   background-color: #9e6d52;
+  margin: 0;
 }
 
 .header-items__item2--img2 {
@@ -74,6 +77,7 @@ header {
 .header-items__item3 {
   background-color: #0a846e;
   grid-area: c;
+  margin: 0;
 }
 
 .header-items__item3--img3 {
@@ -137,16 +141,18 @@ main {
 .sec-2 {
   grid-area: b;
   display: flex;
-  align-content: center;
   align-items: center;
+  justify-content: center;
+  margin-top: 100px;
 }
 
 .sec-2__cirkel {
   background-color: #0a846e;
   border-radius: 50%;
-  width: 300px;
+  width:300px;
   height: 300px;
   text-align: center;
+ 
 }
 
 .sec-2__cirkel--icon {
@@ -216,7 +222,6 @@ main {
   grid-area: l;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 
 
 
@@ -238,6 +243,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .gurka-1 {
@@ -358,6 +365,7 @@ main {
     'bt5 imgx';
   height: 350px;
   font-family: 'Open Sans';
+  
  
 
 }
@@ -402,17 +410,19 @@ main {
 .icon_x {
   grid-area: imgx;
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #0a846e;
   border-radius: 50%;
-  margin: 50px;
-
+align-items: center;
+justify-content: center;
+  width: 80%;
   
- 
 }
+
 .icono {
-position: absolute;
+width: 40%;
+align-self: center;
+
+
 }
 
 .footer {
@@ -513,9 +523,9 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-      "a"
-      "b"
-      "c";
+      "a a"
+      "b c"
+    
 }
 .logo--logo1{
   width: 120px;
@@ -546,6 +556,7 @@ main {
 
 .sec-5 {
   grid-template-columns: 1fr;
+
   grid-template-areas:
       "IMG1 IMG1"
       "TXT1 TXT1"
@@ -555,13 +566,11 @@ main {
       "TXT3 TXT3";
 }
 .Blomma_right {
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: 1fr ;
   grid-template-areas:
-    'xt'/* text*/
-    'bt5'/*Button*/
-    '.'
-    'imgx'; /* image icon*/
+    'xt'
+    'bt5'
+    'imgx'; 
 }
 
 .intro {
@@ -570,20 +579,23 @@ main {
 
 .btnx {
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .icon_x {
-  width: 100px; /* Adjust size for smaller screens if needed */
-  height: 100px; /* Adjust size for smaller screens if needed */
-  margin: 0 auto; /* Center horizontally */
   display: flex;
+  width: 300px; /* Adjust size for smaller screens if needed */
+  height: 250px; /* Adjust size for smaller screens if needed */
+  margin: 0 auto; /* Center horizontally */
   align-items: center;
   justify-content: center;
+  
+
  
 }
 .icono{
 
-  width: 40px;
+  width: 80px;
   position: absolute;
 
 
@@ -592,6 +604,7 @@ main {
 
 
 .footer {
+  margin-top: 300px;
   grid-template-columns: 1fr;
   grid-template-areas: 
   "photo"
