@@ -16,116 +16,109 @@
 </head>
 <body>
 
-    <header>
-        <div class="header-img">
-            <img src="assets/icons/Logo.svg" alt="" />
+    <body>
+        <header>
+          <figure class="header-img">
+            <img src="assets/icons/Logo.svg" alt="Logo" />
             <h1>Mina sidor</h1>
-        </div>
-
-        <a href="index.html" class="hamburger-icon">
+          </figure>
+          <a href="index.html" class="hamburger-icon">
             <i class="fas fa-bars"></i>
-        </a>
-    </header>
-    <nav>
-        <ul>
+          </a>
+        </header>
+      
+        <nav>
+          <ul>
             <li><a href="#">PLANTS</a></li>
             <li><a href="#">HISTORIK</a></li>
             <li><a href="#">TIPS</a></li>
             <li><a href="index.html">LOGGA IN</a></li>
-        </ul>
-    </nav>
-
-    <form action="">
-        <h1>Lägg till ny plantering:</h1>
-    
-        <div class="form-row">
+          </ul>
+        </nav>
+      
+        <form action="">
+          <h1>Lägg till ny plantering:</h1>
+          <section class="form-row">
             <label for="name">Planta:</label>
             <label for="date" class="date-input-one">Datum:</label>
-        </div>
-    
-        <div class="form-row">
+          </section>
+          <section class="form-row">
             <input type="text" id="name" placeholder="Ange planta" />
             <label for="date" class="date-input-two">Datum:</label>
             <input type="date" id="date" />
-        </div>
-    
-        <button type="submit">Lägg till</button>
-    </form>
-    
-    <section class="plant-one one">
-        <h1>Dina planerade planteringar</h1>
-        <article class="card">
+          </section>
+          <button type="submit">Lägg till</button>
+        </form>
+      
+        <section class="plant-one one">
+          <h1>Dina planerade planteringar</h1>
+          <article class="card">
             <figure class="image-container">
-                <img src="assets/images/gurka.avif" alt="Produktbild">
-                <img src="assets/icons/dig.svg" alt="Logga" class="logo">
-                 <figcaption>
+              <img src="assets/images/gurka.avif" alt="Produktbild">
+              <img src="assets/icons/dig.svg" alt="Logga" class="logo">
+              <figcaption>
                 <p class="product-name">Gurka</p>
                 <p class="date">15 april 2024</p>
-            </figcaption>
+              </figcaption>
             </figure>
-
-            <div class="additional-info">
+            <section class="additional-info">
+              <p class="thin-name">Ricco Coolio</p>
+              <button class="btn-remove">TA BORT</button>
+              <i class="fa-regular fa-trash-can"></i>
+            </section>
+          </article>
+        </section>
+      
+        <section class="plant-one two">
+          <h1>Dina planerade planteringar</h1>
+          <section class="card-container">
+            <article class="card">
+              <figure class="image-container">
+                <img src="assets/images/gurka.avif" alt="Produktbild">
+                <img src="assets/icons/dig.svg" alt="Logga" class="logo">
+                <figcaption>
+                  <p class="product-name">Gurka</p>
+                  <p class="date">15 april 2024</p>
+                </figcaption>
+              </figure>
+              <section class="additional-info">
                 <p class="thin-name">Ricco Coolio</p>
                 <button class="btn-remove">TA BORT</button>
                 <i class="fa-regular fa-trash-can"></i>
-            </div>
-        </article>
-    </section>
-    
-    <section class="plant-one two">
-        <h1>Dina planerade planteringar</h1>
-        <div class="card-container">
+              </section>
+            </article>
+      
             <article class="card">
-                <figure class="image-container">
-                    <img src="assets/images/gurka.avif" alt="Produktbild">
-                    <img src="assets/icons/dig.svg" alt="Logga" class="logo">
-             
-             <figcaption>
-
-         
-                    <p class="product-name">Gurka</p>
-                    <p class="date">15 april 2024</p>
+              <figure class="image-container">
+                <img src="assets/images/gurka.avif" alt="Produktbild">
+                <img src="assets/icons/dig.svg" alt="Logga" class="logo">
+                <figcaption>
+                  <p class="product-name">Gurka</p>
+                  <p class="date">15 april 2024</p>
                 </figcaption>
-                </figure>
-                <div class="additional-info">
-                    <p class="thin-name">Ricco Coolio</p>
-                    <button class="btn-remove">TA BORT</button>
-                    <i class="fa-regular fa-trash-can"></i>
-                </div>
+              </figure>
+              <section class="additional-info">
+                <p class="thin-name">Ricco Coolio</p>
+                <button class="btn-remove">TA BORT</button>
+                <i class="fa-regular fa-trash-can"></i>
+              </section>
             </article>
-    
-            <article class="card">
-                <figure class="image-container">
-                    <img src="assets/images/gurka.avif" alt="Produktbild">
-                    <img src="assets/icons/dig.svg" alt="Logga" class="logo">
-             <figcaption>
-                    <p class="product-name">Gurka</p>
-                    <p class="date">15 april 2024</p>
-             </figcaption>
-             </figure>
-                <div class="additional-info">
-                    <p class="thin-name">Ricco Coolio</p>
-                    <button class="btn-remove">TA BORT</button>
-                    <i class="fa-regular fa-trash-can"></i>
-                </div>
-            </article>
-        </div>
-    </section>
-    
-    <section class="section-gallery"> <!-- USE BEM?-->
-        <figure>
-            <img src="assets/images/plockar.avif" alt="">
-            <img src="assets/images/vattenkanna.avif" alt="">
-            <img src="assets/images/massagrönsaker.avif" alt="">
-            <img src="assets/images/tjejmedhatt.avif" alt="">
-        </figure>
-    </section>
-        
-    <footer>
-        <nav class="nav-bottom">
+          </section>
+        </section>
+      
+        <section class="section-gallery">
+          <figure>
+            <img src="assets/images/plockar.avif" alt="Plockar">
+            <img src="assets/images/vattenkanna.avif" alt="Vattenkanna">
+            <img src="assets/images/massagrönsaker.avif" alt="Massa Grönsaker">
+            <img src="assets/images/tjejmedhatt.avif" alt="Tjej med Hatt">
+          </figure>
+        </section>
+      
+        <footer>
+          <nav class="nav-bottom">
             <a href="#">Tillbaks</a>
           </nav>
-    </footer>
-    
-</body>
+        </footer>
+      </body>
 </html>
